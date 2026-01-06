@@ -41,13 +41,13 @@ Resume_Screener/
 ## ⚡ Screenshots
 
 **Landing Page / Upload**
-![Landing Page](Screenshots/Landing.png)
+![Landing Page](Resume_Screener/Screenshots/Landing.png)
 
 **Resume Upload / Analyze**
-![Analyze Page](Screenshots/Analyze.png)
+![Analyze Page](Resume_Screener/Screenshots/Analyze.png)
 
 **Result Page / Skill Match**
-![Result Page](Screenshots/Result.png)
+![Result Page](Resume_Screener/Screenshots/Result.png)
 
 ---
 
