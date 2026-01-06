@@ -1,0 +1,45 @@
+{% if score is not None %}
+
+<div class="mt-8 p-6 bg-gray-50 rounded-xl border">
+
+    <h3 class="text-xl font-semibold text-gray-800 text-center">
+        Resume Match Result
+    </h3>
+
+    <!-- Percentage -->
+    <div class="mt-4 text-center">
+        <span class="text-5xl font-bold text-green-600">
+            {{ score }}%
+        </span>
+        <p class="text-gray-500 mt-1">Overall Match Score</p>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="mt-6">
+        <div class="w-full bg-gray-200 rounded-full h-3">
+            <div
+                class="bg-green-500 h-3 rounded-full transition-all duration-700"
+                style="width: {{ score }}%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Interpretation -->
+    <div class="mt-5 text-center">
+        {% if score >= 80 %}
+            <span class="text-green-600 font-semibold">
+                Excellent match 🎯
+            </span>
+        {% elif score >= 60 %}
+            <span class="text-yellow-600 font-semibold">
+                Good match 👍
+            </span>
+        {% else %}
+            <span class="text-red-600 font-semibold">
+                Needs improvement ⚠️
+            </span>
+        {% endif %}
+    </div>
+
+</div>
+{% endif %}
